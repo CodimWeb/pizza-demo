@@ -171,6 +171,19 @@
                                             <div class="comment-title">Комментарий к заказу</div>
                                             <input type="text" class="form-control comment-field" placeholder="Ваш комментарий">
                                         </div>
+                                        <!-- <div class="deliviery-panel">
+                                            <div class="deliviery-panel__title">Дата доставки</div>
+                                            <select name="" id="" class="select-delivery">
+                                                <option value="">1</option>
+                                                <option value="">1</option>
+                                                <option value="">1</option>
+                                            </select>
+                                            <select name="" id="" class="select-delivery">
+                                                <option value="">1</option>
+                                                <option value="">1</option>
+                                                <option value="">1</option>
+                                            </select>
+                                        </div> -->
                                     </div>
                                 </div>
                                 <div class="tab-pane fade" id="pickup" role="tabpanel" aria-labelledby="pickup-tab">
@@ -252,6 +265,19 @@
                                             <div class="comment-title">Комментарий к заказу</div>
                                             <input type="text" class="form-control comment-field" placeholder="Ваш комментарий">
                                         </div>
+                                        <!-- <div class="deliviery-panel">
+                                            <div class="deliviery-panel__title">Дата доставки</div>
+                                            <select name="" id="" class="select-delivery">
+                                                <option value="">1</option>
+                                                <option value="">1</option>
+                                                <option value="">1</option>
+                                            </select>
+                                            <select name="" id="" class="select-delivery">
+                                                <option value="">1</option>
+                                                <option value="">1</option>
+                                                <option value="">1</option>
+                                            </select>
+                                        </div> -->
                                     </div>    
                                 </div>
                             </div>
@@ -264,12 +290,12 @@
                                 <input type="radio" name="filial" id="pay-type-site" class="radio-input">
                                 <label for="pay-type-site" class="radio-label">
                                     <div class="radio-label__text">Банковской картой на сайте</div>
-                                    <div class="pay-systems">
-                                        <img src="img/icons/visa.svg" alt="">
-                                        <img src="img/icons/mir.svg" alt="">
-                                        <img src="img/icons/mastercard.svg" alt="">
-                                    </div>
                                 </label>
+                                <div class="pay-systems">
+                                    <img src="img/icons/visa.svg" alt="">
+                                    <img src="img/icons/mir.svg" alt="">
+                                    <img src="img/icons/mastercard.svg" alt="">
+                                </div>
                             </div>
                             <div class="radio-container">
                                 <input type="radio" name="filial" id="pay-type-card" class="radio-input">
@@ -287,7 +313,144 @@
                     </div>
                     <div class="order-devider"></div>
                     <div class="order-right">
-                        
+                        <div class="order-cart">
+                            <div class="order-cart__title">СОСТАВ ЗАКАЗА:</div>
+                            <div class="order-cart__list">
+                                <div class="order-cart__item">
+                                    <div class="order-cart__item__left">
+                                        <div class="order-cart__item__type">Пицца 32 см<span class="order-cart__item__count">х2</span></div>
+                                        <div class="order-cart__item__name">Солянка Злодейская</div>
+                                    </div>
+                                    <div class="order-cart-item__right">
+                                        <div class="order-cart__item__price">1399 &#8381;</div>
+                                    </div>
+                                </div>
+                                <div class="order-cart__item">
+                                    <div class="order-cart__item__left">
+                                        <div class="order-cart__item__type">Своя Пицца 32см</div>
+                                    </div>
+                                    <div class="order-cart-item__right">
+                                        <div class="order-cart__item__price">940 &#8381;</div>
+                                    </div>
+                                </div>
+                                <div class="order-cart__item">
+                                    <div class="order-cart__item__left">
+                                        <div class="order-cart__item__type">Пицца 26 см</div>
+                                        <div class="order-cart__item__name">Ниндзя</div>
+                                    </div>
+                                    <div class="order-cart-item__right">
+                                        <div class="order-cart__item__price">0 &#8381;</div>
+                                    </div>
+                                </div>
+                                <div class="order-cart__item">
+                                    <div class="order-cart__item__left">
+                                        <div class="order-cart__item__type">Пицца 26 см</div>
+                                        <div class="order-cart__item__name">Английский завтрак</div>
+                                    </div>
+                                    <div class="order-cart-item__right">
+                                        <div class="order-cart__item__price">0 &#8381;</div>
+                                    </div>
+                                </div>
+                                <div class="order-cart__item">
+                                    <div class="order-cart__item__left">
+                                        <div class="order-cart__item__type">Промо пицца 32 см</div>
+                                        <div class="order-cart__item__name">Солянка Злодейская</div>
+                                    </div>
+                                    <div class="order-cart-item__right">
+                                        <div class="order-cart__item__price">389 &#8381;</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order-cart__result">
+                                <span>К оплате</span>
+                                <span class="order-cart__result-price">2 667 &#8381;</span>
+                            </div>
+                        </div>
+                        <div class="deliviery-panel">
+                            <div class="deliviery-panel__title">Дата доставки</div>
+                            <select name="" id="" class="select-delivery">
+                                <option value="">1</option>
+                                <option value="">1</option>
+                                <option value="">1</option>
+                            </select>
+                            <select name="" id="" class="select-delivery">
+                                <option value="">1</option>
+                                <option value="">1</option>
+                                <option value="">1</option>
+                            </select>
+                        </div>
+                        <div class="detail-adress">
+                            <div class="detail-address__group">
+                                <div class="detail-adress__row">
+                                    <div class="detail-adress__col col-12">
+                                        <label class="detail-adress__label">Название адреса</label>
+                                        <input type="text" class="form-control comment-field detail-adress__field" placeholder="Мой адрес">
+                                        <div class="detail-adress__subtitle">Например, <span>Дом</span> или <span>Работа</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="detail-address__group">
+                                <div class="detail-adress__row">
+                                    <div class="detail-adress__col col-12">
+                                        <label class="detail-adress__label">Адрес</label>
+                                        <input type="text" class="form-control comment-field detail-adress__field" placeholder="Улица">
+                                    </div>
+                                    <div class="detail-adress__col col-6">
+                                        <input type="text" class="form-control comment-field detail-adress__field" placeholder="Дом">
+                                    </div>
+                                    <div class="detail-adress__col col-6">
+                                        <input type="text" class="form-control comment-field detail-adress__field" placeholder="Квартира">
+                                    </div>
+                                    <div class="detail-adress__col col-6">
+                                        <input type="text" class="form-control comment-field detail-adress__field" placeholder="Этаж">
+                                    </div>
+                                    <div class="detail-adress__col col-6">
+                                        <input type="text" class="form-control comment-field detail-adress__field" placeholder="Подъезд">
+                                    </div>
+                                    <div class="detail-adress__col col-12">
+                                        <div class="checkbox-container detail-address__intercom">
+                                            <input type="checkbox" class="checkbox-input" id="order-intercom">
+                                            <label for="order-intercom" class="checkbox-label">
+                                                <div class="checkbox-label__text">Домофон</div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn detail-adress__btn">Изменить адрес</button>
+                                    <button type="button" class="btn detail-adress__btn">Удалить адрес</button>
+                                </div>
+                            </div>   
+                        </div>
+                        <div class="order-exchange">
+                            <label for="" class="detail-adress__label">Сдача с суммы</label>
+                            <div class="order-exchange__panel">
+                                <input type="text" class="form-control comment-field detail-adress__field">
+                                <div class="order-exchange__icon">&#8381;</div>
+                            </div>
+                        </div>
+                        <div class="pay-form">
+                            <div class="detail-adress__row">
+                                <div class="detail-adress__col col-12">
+                                    <input type="text" class="form-control comment-field detail-adress__field" placeholder="Номер карты">
+                                </div>
+                            </div>
+                            <div class="detail-adress__row">
+                                <div class="detail-adress__col col-7">
+                                    <input type="text" class="form-control comment-field detail-adress__field" placeholder="Срок действия">
+                                </div>
+                                <div class="detail-adress__col col-5">
+                                    <input type="text" class="form-control comment-field detail-adress__field" placeholder="CVC">
+                                    <img class="pay-form__icon-card" src="img/icons/icon-card.svg">
+                                </div>
+                                <div class="detail-adress__col col-12">
+                                    <div class="checkbox-container pay-form-card">
+                                        <input type="checkbox" class="checkbox-input" id="pay-form-card">
+                                        <label for="pay-form-card" class="checkbox-label">
+                                            <div class="checkbox-label__text">Привязать карту к личному кабинету для быстрой оплаты следующих заказов</div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>    
             </div>
