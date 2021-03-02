@@ -21,11 +21,12 @@
                 <img src="img/loader2.svg" alt="">
             </div>
         </div>
-        <div class="header header-home">
+        <div class="header">
             <a href="https://ninjapizza.ru/" class="header-logo">
                 <img src="img/logo.svg" alt="">
             </a>
             <div class="nav-wrap">
+                <div class="nav-backdrop"></div>
                 <div class="nav-container">
                     <div class="mobile-nav-header">
                         <div class="header-cart" data-toggle="modal" data-target="#modal-cart"> <!-- cart-empty для пустой корзины -->
@@ -220,6 +221,13 @@
                     </div>
                 </div>
             </div>
+            <div class="mobile-burger-menu">
+                <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 16H0V18H20V16Z" fill="white"/>
+                    <path d="M20 8H0V10H20V8Z" fill="white"/>
+                    <path d="M20 0H0V2H20V0Z" fill="white"/>
+                </svg>    
+            </div>
         </div>
         <div class="content">
             <div class="main-slider">
@@ -227,7 +235,7 @@
                     <div class="slick-item">
                         <div class="main-slider__picture">
                             <picture>
-                                <source srcset="img/test.png" media="(max-width: 1200px)">
+                                <source srcset="img/test.png" media="(max-width: 767px)">
                                 <source srcset="img/main-slider-1920.png" media="(max-width: 1920px)">
                                 <source srcset="img/main-slider.png" media="(min-width: 1921px)">
                                 <img srcset="img/main-slider.png" alt="">
@@ -237,7 +245,7 @@
                     <div class="slick-item">
                         <div class="main-slider__picture">
                             <picture>
-                                <source srcset="img/test.png" media="(max-width: 1200px)">
+                                <source srcset="img/test.png" media="(max-width: 767px)">
                                 <source srcset="img/main-slider-1920.png" media="(max-width: 1920px)">
                                 <source srcset="img/main-slider.png" media="(min-width: 1921px)">
                                 <img srcset="img/main-slider.png" alt="">
@@ -247,7 +255,7 @@
                     <div class="slick-item">
                         <div class="main-slider__picture">
                             <picture>
-                                <source srcset="img/test.png" media="(max-width: 1200px)">
+                                <source srcset="img/test.png" media="(max-width: 767px)">
                                 <source srcset="img/main-slider-1920.png" media="(max-width: 1920px)">
                                 <source srcset="img/main-slider.png" media="(min-width: 1921px)">
                                 <img srcset="img/main-slider.png" alt="">
@@ -267,7 +275,12 @@
                                 </div>
                                 <div class="product-item__body">
                                     <div class="product-item__picture">
-                                        <img src="img/set1_5pizzas.png" alt="">
+                                        <picture>
+                                            <source srcset="img/set1_5pizzas-mob.png" media="(max-width: 1023px)">
+                                            <source srcset="img/set1_5pizzas.png" media="(min-width: 1024px)">
+                                            <img srcset="img/set1_5pizzas.png" alt="">
+                                        </picture>
+                                        <!-- <img src="img/set1_5pizzas.png" alt=""> -->
                                         <div class="product-item__composition">
                                             <p class="product-item__composition-text">
                                                 ТОЛЬКО ХИТЫ! Пиццы 32 см: Двойная пеперони, Английский завтрак, Охотничья, Классическая, Ветчина и Грибы.
@@ -291,7 +304,12 @@
                                 </div>
                                 <div class="product-item__body">
                                     <div class="product-item__picture">
-                                        <img src="img/set2_3pizzas.png" alt="">
+                                        <picture>
+                                            <source srcset="img/set2_3pizzas-mob.png" media="(max-width: 1023px)">
+                                            <source srcset="img/set2_3pizzas.png" media="(min-width: 1024px)">
+                                            <img srcset="img/set2_3pizzas.png" alt="">
+                                        </picture>
+                                        <!-- <img src="img/set2_3pizzas.png" alt=""> -->
                                         <div class="product-item__composition">
                                             <p class="product-item__composition-text">
                                                 ТОЛЬКО ХИТЫ! Пиццы 32 см: Двойная пеперони, Английский завтрак, Охотничья, Классическая, Ветчина и Грибы.
@@ -341,6 +359,7 @@
                                 <p class="product-item__label">Пиццы</p>
                                 <div class="product-item__header">
                                     <div class="product-item__name">СОЛЯНКА ЗЛОДЕЙСКАЯ</div>
+                                    <div class="product-item__label-mobile">Пицца 32 см, <span>850 гр.</span></div>
                                 </div>
                                 <div class="product-item__body">
                                     <div class="product-item__picture">
@@ -368,6 +387,7 @@
                             <div class="product-item product-pizza">
                                 <div class="product-item__header">
                                     <div class="product-item__name">мясная</div>
+                                    <div class="product-item__label-mobile">Пицца 32 см, <span>850 гр.</span></div>
                                 </div>
                                 <div class="product-item__body">
                                     <div class="product-item__picture">
@@ -396,6 +416,7 @@
                                 <p class="product-item__label">Пиццы</p>
                                 <div class="product-item__header">
                                     <div class="product-item__name">СОЛЯНКА ЗЛОДЕЙСКАЯ</div>
+                                    <div class="product-item__label-mobile">Пицца 32 см, <span>850 гр.</span></div>
                                 </div>
                                 <div class="product-item__body">
                                     <div class="product-item__picture">
@@ -423,10 +444,17 @@
                             <div class="product-item product-pizza">
                                 <div class="product-item__header">
                                     <div class="product-item__name">мясная</div>
+                                    <div class="product-item__label-mobile">Пицца 32 см, <span>850 гр.</span></div>
                                 </div>
                                 <div class="product-item__body">
                                     <div class="product-item__picture">
                                         <img src="img/product-1.jpg" alt="">
+                                        <div class="product-item__composition">
+                                            <p class="product-item__composition-text">
+                                                Соус пикантный томатный, ветчина, бекон,
+                                                <span class="product-item__composition-weight">760 гр.</span>
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>    
                                 <div class="product-item__footer">
@@ -440,10 +468,17 @@
                             <div class="product-item product-pizza">
                                 <div class="product-item__header">
                                     <div class="product-item__name">мясная</div>
+                                    <div class="product-item__label-mobile">Пицца 32 см, <span>850 гр.</span></div>
                                 </div>
                                 <div class="product-item__body">
                                     <div class="product-item__picture">
                                         <img src="img/product-1.jpg" alt="">
+                                        <div class="product-item__composition">
+                                            <p class="product-item__composition-text">
+                                                Соус пикантный томатный, ветчина, бекон, помидоры, перец болгарский, лук, сыр Гауда, сыр Моцарелла. 
+                                                <span class="product-item__composition-weight">760 гр.</span>
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>    
                                 <div class="product-item__footer">
@@ -457,10 +492,17 @@
                             <div class="product-item product-pizza">
                                 <div class="product-item__header">
                                     <div class="product-item__name">мясная</div>
+                                    <div class="product-item__label-mobile">Пицца 32 см, <span>850 гр.</span></div>
                                 </div>
                                 <div class="product-item__body">
                                     <div class="product-item__picture">
                                         <img src="img/product-1.jpg" alt="">
+                                        <div class="product-item__composition">
+                                            <p class="product-item__composition-text">
+                                                Соус пикантный томатный, ветчина, бекон, помидоры, перец болгарский, лук, сыр Гауда, сыр Моцарелла. 
+                                                <span class="product-item__composition-weight">760 гр.</span>
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>    
                                 <div class="product-item__footer">
@@ -474,10 +516,17 @@
                             <div class="product-item product-pizza">
                                 <div class="product-item__header">
                                     <div class="product-item__name">мясная</div>
+                                    <div class="product-item__label-mobile">Пицца 32 см, <span>850 гр.</span></div>
                                 </div>
                                 <div class="product-item__body">
                                     <div class="product-item__picture">
                                         <img src="img/product-1.jpg" alt="">
+                                        <div class="product-item__composition">
+                                            <p class="product-item__composition-text">
+                                                Соус пикантный томатный, ветчина, бекон, помидоры, перец болгарский, лук, сыр Гауда, сыр Моцарелла. 
+                                                <span class="product-item__composition-weight">760 гр.</span>
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>    
                                 <div class="product-item__footer">
@@ -491,10 +540,17 @@
                             <div class="product-item product-pizza">
                                 <div class="product-item__header">
                                     <div class="product-item__name">мясная</div>
+                                    <div class="product-item__label-mobile">Пицца 32 см, <span>850 гр.</span></div>
                                 </div>
                                 <div class="product-item__body">
                                     <div class="product-item__picture">
                                         <img src="img/product-1.jpg" alt="">
+                                        <div class="product-item__composition">
+                                            <p class="product-item__composition-text">
+                                                Соус пикантный томатный, ветчина, бекон, помидоры, перец болгарский, лук, сыр Гауда, сыр Моцарелла. 
+                                                <span class="product-item__composition-weight">760 гр.</span>
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>    
                                 <div class="product-item__footer">
@@ -508,10 +564,17 @@
                             <div class="product-item product-pizza">
                                 <div class="product-item__header">
                                     <div class="product-item__name">мясная</div>
+                                    <div class="product-item__label-mobile">Пицца 32 см, <span>850 гр.</span></div>
                                 </div>
                                 <div class="product-item__body">
                                     <div class="product-item__picture">
                                         <img src="img/product-1.jpg" alt="">
+                                        <div class="product-item__composition">
+                                            <p class="product-item__composition-text">
+                                                Соус пикантный томатный, ветчина, бекон, помидоры,
+                                                <span class="product-item__composition-weight">760 гр.</span>
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>    
                                 <div class="product-item__footer">
@@ -532,6 +595,7 @@
                             <div class="product-item">
                                 <div class="product-item__header">
                                     <div class="product-item__name">СЫРНЫЕ ШАРИКИ</div>
+                                    <div class="product-item__label-mobile"><span>850 гр.</span></div>
                                 </div>
                                 <div class="product-item__body">
                                     <div class="product-item__picture">
@@ -556,6 +620,7 @@
                             <div class="product-item">
                                 <div class="product-item__header">
                                     <div class="product-item__name">СОЛЯНКА</div>
+                                    <div class="product-item__label-mobile"><span>850 гр.</span></div>
                                 </div>
                                 <div class="product-item__body">
                                     <div class="product-item__picture">
@@ -580,6 +645,7 @@
                             <div class="product-item">
                                 <div class="product-item__header">
                                     <div class="product-item__name">СЭНДВИЧ С СЕМГОЙ</div>
+                                    <div class="product-item__label-mobile"><span>850 гр.</span></div>
                                 </div>
                                 <div class="product-item__body">
                                     <div class="product-item__picture">
@@ -604,6 +670,7 @@
                             <div class="product-item">
                                 <div class="product-item__header">
                                     <div class="product-item__name">СЭНДВИЧ С СЕМГОЙ</div>
+                                    <div class="product-item__label-mobile"><span>850 гр.</span></div>
                                 </div>
                                 <div class="product-item__body">
                                     <div class="product-item__picture">
@@ -628,6 +695,7 @@
                             <div class="product-item">
                                 <div class="product-item__header">
                                     <div class="product-item__name">СЭНДВИЧ С СЕМГОЙ</div>
+                                    <div class="product-item__label-mobile"><span>850 гр.</span></div>
                                 </div>
                                 <div class="product-item__body">
                                     <div class="product-item__picture">
@@ -652,6 +720,7 @@
                             <div class="product-item">
                                 <div class="product-item__header">
                                     <div class="product-item__name">СЭНДВИЧ С СЕМГОЙ</div>
+                                    <div class="product-item__label-mobile"><span>850 гр.</span></div>
                                 </div>
                                 <div class="product-item__body">
                                     <div class="product-item__picture">
@@ -683,6 +752,7 @@
                             <div class="product-item">
                                 <div class="product-item__header">
                                     <div class="product-item__name">ЦЕЗАРЬ С КРЕВЕТКАМИ</div>
+                                    <div class="product-item__label-mobile"><span>850 гр.</span></div>
                                 </div>
                                 <div class="product-item__body">
                                     <div class="product-item__picture">
@@ -707,6 +777,7 @@
                             <div class="product-item">
                                 <div class="product-item__header">
                                     <div class="product-item__name">ЧАФАН</div>
+                                    <div class="product-item__label-mobile"><span>850 гр.</span></div>
                                 </div>
                                 <div class="product-item__body">
                                     <div class="product-item__picture">
@@ -728,6 +799,7 @@
                             <div class="product-item">
                                 <div class="product-item__header">
                                     <div class="product-item__name">ЧАФАН</div>
+                                    <div class="product-item__label-mobile"><span>850 гр.</span></div>
                                 </div>
                                 <div class="product-item__body">
                                     <div class="product-item__picture">
@@ -749,6 +821,7 @@
                             <div class="product-item">
                                 <div class="product-item__header">
                                     <div class="product-item__name">ЧАФАН</div>
+                                    <div class="product-item__label-mobile"><span>850 гр.</span></div>
                                 </div>
                                 <div class="product-item__body">
                                     <div class="product-item__picture">
@@ -770,6 +843,7 @@
                             <div class="product-item">
                                 <div class="product-item__header">
                                     <div class="product-item__name">ЧАФАН</div>
+                                    <div class="product-item__label-mobile"><span>850 гр.</span></div>
                                 </div>
                                 <div class="product-item__body">
                                     <div class="product-item__picture">
@@ -791,6 +865,7 @@
                             <div class="product-item">
                                 <div class="product-item__header">
                                     <div class="product-item__name">ЧАФАН</div>
+                                    <div class="product-item__label-mobile"><span>850 гр.</span></div>
                                 </div>
                                 <div class="product-item__body">
                                     <div class="product-item__picture">
@@ -812,6 +887,7 @@
                             <div class="product-item">
                                 <div class="product-item__header">
                                     <div class="product-item__name">ЧАФАН</div>
+                                    <div class="product-item__label-mobile"><span>850 гр.</span></div>
                                 </div>
                                 <div class="product-item__body">
                                     <div class="product-item__picture">
@@ -840,6 +916,7 @@
                             <div class="product-item">
                                 <div class="product-item__header">
                                     <div class="product-item__name">ЧИЗКЕЙК КАРАМЕЛЬНЫЙ</div>
+                                    <div class="product-item__label-mobile"><span>850 гр.</span></div>
                                 </div>
                                 <div class="product-item__body">
                                     <div class="product-item__picture">
@@ -864,6 +941,7 @@
                             <div class="product-item">
                                 <div class="product-item__header">
                                     <div class="product-item__name">МАКАРУНЫ</div>
+                                    <div class="product-item__label-mobile"><span>850 гр.</span></div>
                                 </div>
                                 <div class="product-item__body">
                                     <div class="product-item__picture">
@@ -885,6 +963,7 @@
                             <div class="product-item">
                                 <div class="product-item__header">
                                     <div class="product-item__name">МАКАРУНЫ</div>
+                                    <div class="product-item__label-mobile"><span>850 гр.</span></div>
                                 </div>
                                 <div class="product-item__body">
                                     <div class="product-item__picture">
@@ -906,6 +985,7 @@
                             <div class="product-item">
                                 <div class="product-item__header">
                                     <div class="product-item__name">МАКАРУНЫ</div>
+                                    <div class="product-item__label-mobile"><span>850 гр.</span></div>
                                 </div>
                                 <div class="product-item__body">
                                     <div class="product-item__picture">
@@ -927,6 +1007,7 @@
                             <div class="product-item">
                                 <div class="product-item__header">
                                     <div class="product-item__name">МАКАРУНЫ</div>
+                                    <div class="product-item__label-mobile"><span>850 гр.</span></div>
                                 </div>
                                 <div class="product-item__body">
                                     <div class="product-item__picture">
@@ -955,6 +1036,7 @@
                             <div class="product-item">
                                 <div class="product-item__header">
                                     <div class="product-item__name">СОУС ДИЖОНСКИЙ</div>
+                                    <div class="product-item__label-mobile"><span>850 гр.</span></div>
                                 </div>
                                 <div class="product-item__body">
                                     <div class="product-item__picture">
@@ -976,6 +1058,7 @@
                             <div class="product-item">
                                 <div class="product-item__header">
                                     <div class="product-item__name">СОУС КЛАССИЧЕСКИЙ</div>
+                                    <div class="product-item__label-mobile"><span>850 гр.</span></div>
                                 </div>
                                 <div class="product-item__body">
                                     <div class="product-item__picture">
@@ -994,6 +1077,7 @@
                             <div class="product-item">
                                 <div class="product-item__header">
                                     <div class="product-item__name">СОУС КЛАССИЧЕСКИЙ</div>
+                                    <div class="product-item__label-mobile"><span>850 гр.</span></div>
                                 </div>
                                 <div class="product-item__body">
                                     <div class="product-item__picture">
